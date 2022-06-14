@@ -1,8 +1,9 @@
-version: "3"
+version: '3'
 services:
-  app:
-    container_name: webpage
-    restart: always
+  web:
+    image: webpage
     build: .
+    container_name: mywebpage
+    restart: always
     ports:
       - "3000:3000"
