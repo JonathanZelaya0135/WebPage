@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+#photo {
+  position: relative;
+  width: 530px;
+  margin-left: 290px;
+  animation: bounceIn;
+  animation-duration: 2s;
+}
+
+#photo2 {
+  position: relative;
+  width: 60px;
+  margin-top: -650px;
+  margin-left: -180px;
+  animation: pulse 2s infinite;
+}
+
+#photo3 {
+  position: relative;
+  width: 120px;
+  margin-top: -640px;
+  margin-left: -120px;
+  animation: pulse 2s infinite;
+}
+
+#photo4 {
+  position: relative;
+  width: 50px;
+  margin-top: -640px;
+  margin-left: -10px;
+  margin-right: -35px;
+  animation: pulse 2s infinite;
+}
+
+.container {
+  background: rgb(250, 195, 246);
+  background: linear-gradient(
+    90deg,
+    rgba(250, 195, 246, 1) 2%,
+    rgba(27, 36, 126, 1) 98%
+  );
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  color: rgb(30, 29, 31);
+  text-align: center;
+  margin: 30px 0;
+  animation: fadeInDown;
+  animation-duration: 2s;
+}
+
+.Wrapper {
+  background-color: whitesmoke;
+  min-width: 450px;
+  min-height: 640px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  margin-bottom: 10px;
+  animation: bounceIn;
+  animation-duration: 1s;
+}
+
+.Btn_Add {
+  width: 90px;
+  padding: 15px 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 0;
+  color: aliceblue;
+  background-color: rgb(240, 159, 234);
+  cursor: pointer;
+  animation: fadeInUp;
+  animation-duration: 2s;
+}
+
+.Btn_Add:hover{
+  background-color: rgb(247, 112, 238);
+  transform: scale(1.02);
+}
+
+.list-item {
+  display: flex;
+  margin: 20px 0;
+  background-color: rgba(212, 209, 209, 0.568);
+  border-radius: 5px;
+  padding: 10px;
+  max-height: 30px;
+}
+
+.list {
+  width: 220px;
+  background-color: transparent;
+  border: none;
+  color: rgb(17, 17, 17);
+  font-size: 20px;
+  padding-left: 10px;
+  margin-right: 15px;
+}
+
+.Btn_Complete {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 27px;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: bounceIn;
+  animation-duration: 2s;
+  color: rgb(76, 198, 111);
+  margin-right: 0px;
+  margin-left: 90px;
+}
+
+.Btn_Complete:hover{
+  color: rgb(17, 226, 77);
+  transform: scale(1.1);
+}
+
+.task-input {
+  outline: none;
+  width: 250px;
+  padding: 15px;
+  margin-right: 25px;
+  font-size: 16px;
+  color: rgb(33, 32, 34);
+  background-color: rgba(192, 189, 189, 0.425);
+  border: none;
+  border-radius: 5px;
+  animation: fadeInUp;
+  animation-duration: 2s;
+}
+
+.complete {
+  text-decoration-style: solid;
+  text-decoration-line: line-through;
+  text-decoration-color: lightgray;
+  opacity: 0.6;
+}
