@@ -1,5 +1,6 @@
 {
   "name": "corto2",
+  "homepage": "url_sitio_web",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

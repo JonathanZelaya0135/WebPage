@@ -1,9 +1,11 @@
-version: '3'
+version: '3.9'
 services:
-  web:
+  webpage:
     image: webpage
     build: .
     container_name: mywebpage
     restart: always
-    ports:
-      - "3000:80"
+    expose:
+      - 5000
+    volumes:
+      - .:usr/src/app
