@@ -6,6 +6,6 @@ RUN apt-get install nginx -y
 
 COPY public/index.html /var/www/html/
 
-EXPOSE 80
+EXPOSE 3000
 
 CMD [“nginx”,”-g”,”daemon off;”]
