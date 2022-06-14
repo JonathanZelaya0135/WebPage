@@ -1,11 +1,3 @@
-FROM ubuntu
-
-RUN apt-get update
-
-RUN apt-get install nginx -y
-
-COPY public/index.html /var/www/html/
-
+FROM nginx
+COPY . /usr/share/nginx/html
 EXPOSE 3000
-
-CMD [“nginx”,”-g”]
