@@ -11,7 +11,7 @@ services:
   nginx:
     build: ./nginx
     ports:
-      - 80:80
+      - 81:81
     links:
       - webpage
     restart: always
