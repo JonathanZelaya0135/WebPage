@@ -1,17 +1,6 @@
-version: '3.9'
+version: "3.3"    
 services:
-  webpage:
-    container_name: webpage    
-    build: .
-    image: webpage
-    expose:
-      - 5000
-    volumes:
-      - .:/usr/src/app
-  nginx:
-    build: ./nginx
+  reactapp:
+    image: WebPage:latest
     ports:
-      - 80:80
-    links:
-      - webpage
-    restart: always
+      - "80:80"
