@@ -1,6 +1,12 @@
-version: "3.3"    
+version: "3.8"    
 services:
-  reactapp:
-    image: WebPage:latest
+  webpage:
+    build: .
+    container_name: webpage
     ports:
-      - "80:80"
+      - 3000:3000
+    volumes:
+      - .:/app
+      - ./app/node_modules
+    stdin_open: true
+    tty: true
